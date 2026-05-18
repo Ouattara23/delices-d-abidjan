@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul li a{
+    white-space: nowrap;
+}
+.banner{
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
