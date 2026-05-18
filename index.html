@@ -9,33 +9,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!--En tête-->
+    <!-- En tête -->
     <header>
-        <!--logo du restaurant-->
-        <nav class="navbar navbar-expand-lg px-4 bg-success">
+        <nav class="navbar navbar-expand-lg bg-success px-3">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand text-white">Délices d'Abidjan</a>
-            </div>
-            <!--menu de navigation-->
-            <div class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav gap-4">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-white">À propos de nous</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Contact</a>
-                    </li>
-                </ul>
+
+                <!-- Logo -->
+                <a href="#" class="navbar-brand text-white fw-bold">
+                    Délices d'Abidjan
+                </a>
+
+                <!-- Bouton hamburger -->
+                <button 
+                    class="navbar-toggler bg-white" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarMenu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+
+                    <ul class="navbar-nav gap-lg-4 text-center">
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                Accueil
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                Menu
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                À propos de nous
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
-
     <!--Contenu-->
     <main>
         <!--section héros-->
@@ -50,57 +76,69 @@
         <section class="mt-5 menu">
             <div class="container">
                 <h2 class="text-success text-center mb-5">Le menu</h2>
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/Salade Tropicale.jpg" alt="">
+
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img src="images/Salade Tropicale.jpg" class="img-fluid rounded" alt="">
                         <h4 class="mt-2">Salade Tropicale</h4>
                         <p>Salade fraîche composée d’avocat, mangue, tomates cerises et crevettes assaisonnées d’une vinaigrette maison.</p>
                         <p>Prix : 4 500 FCFA</p>
                     </div>
 
-                    <div class="col-4">
-                        <img src="images/Ailes de Poulet Épicées.jpg" alt="">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img src="images/Ailes de Poulet Épicées.jpg" class="img-fluid rounded" alt="">
                         <h4 class="mt-2">Ailes de Poulet Épicées</h4>
                         <p>Ailes de poulet marinées aux épices africaines et servies avec une sauce piquante.</p>
                         <p>Prix : 5 000 FCFA</p>
                     </div>
 
-                    <div class="col-4">
-                        <img src="images/pastel de poisson.webp" alt="">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img src="images/pastel de poisson.webp" class="img-fluid rounded" alt="">
                         <h4 class="mt-2">Pastels de Poisson</h4>
                         <p>Beignets croustillants farcis au poisson assaisonné et aux herbes fraîches.</p>
                         <p>Prix : 3 500 FCFA</p>
                     </div>
+
                 </div>
             </div>
         </section>
-
-        <!--section à propos de nous-->
+        <!-- section à propos de nous -->
         <section>
             <div class="container about">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="images/restaurant.avif" alt="" class="rounded-5">
+                <div class="row align-items-center g-4">
+
+                    <!-- image -->
+                    <div class="col-12 col-md-4 text-center">
+                        <img src="images/restaurant.avif" alt="" class="img-fluid rounded-5">
                     </div>
-                    <div class="col-8 d-flex flex-column justify-content-center align-items-center">
+
+                    <!-- texte -->
+                    <div class="col-12 col-md-8 d-flex flex-column justify-content-center">
                         <h3 class="text-success">À propos de nous</h3>
-                        <p>Bienvenue à Les Délices d’Abidjan, un restaurant chaleureux où la cuisine ivoirienne rencontre des saveurs modernes venues d’ailleurs.
+                        <p>
+                            Bienvenue à Les Délices d’Abidjan, un restaurant chaleureux où la cuisine ivoirienne rencontre des saveurs modernes venues d’ailleurs.
                             Situé au cœur d’Abidjan, notre établissement vous propose une expérience culinaire unique, alliant authenticité, fraîcheur et créativité.
-                            Chez <b class="text-success">Délices d’Abidjan</b>, chaque plat est préparé avec passion à partir d’ingrédients locaux soigneusement sélectionnés. Nous valorisons la cuisine africaine tout en y ajoutant une touche contemporaine.
+                            Chez <b class="text-success">Délices d’Abidjan</b>, chaque plat est préparé avec passion à partir d’ingrédients locaux soigneusement sélectionnés.
+                            Nous valorisons la cuisine africaine tout en y ajoutant une touche contemporaine.
                         </p>
                     </div>
+
                 </div>
             </div>
         </section>
-
-        <!--section contact-->
+        <!-- section contact -->
         <section class="mt-5">
             <div class="container">
-                <div class="row">
-                    <h3 class="text-success">Contactez-nous</h3>
+
+                <h3 class="text-success text-center mb-4">Contactez-nous</h3>
+
+                <div class="row g-4 align-items-start">
+
                     <!-- Formulaire -->
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <form>
+
                             <div class="mb-3">
                                 <label class="form-label">Nom</label>
                                 <input type="text" class="form-control">
@@ -121,31 +159,46 @@
                         </form>
                     </div>
 
-                    <!-- Zone vide ou image / info -->
-                    <div class="col-6"></div>
+                    <!-- Zone info / image -->
+                    <div class="col-12 col-md-6">
+                        <!-- Tu peux mettre une image ou infos ici -->
+                    </div>
 
                 </div>
-            </div>        
-        </section>
+            </div>
+        </section>    
     </main>
 
-    <!--Pieds de page-->
-    <footer class="mt-5 bg-success text-white">
+    <!-- Pieds de page -->
+    <footer class="mt-5 bg-success text-white py-4">
         <div class="container">
+
             <div class="row">
-               <!--<h2>nhv</h2>
-                <hr class="text-white">-->
-                <div class="col-2"></div>
-                <div class="col-8 d-flex flex-column justify-content-center align-items-center">
-                    <p>© 2026 Les Délices d’Abidjan. Tous droits réservés.</p>
-                    <div class="">
-                        <a href="#"><i class="fa-brands fa-facebook text-white "></i></a>
-                        <a href="#"><i class="fa-brands fa-tiktok text-white "></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp text-white "></i></a>
+                <div class="col-12 text-center">
+
+                    <p class="mb-3">
+                        © 2026 Les Délices d’Abidjan. Tous droits réservés.
+                    </p>
+
+                    <div class="d-flex justify-content-center gap-4">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook text-white fs-4"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-tiktok text-white fs-4"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-whatsapp text-white fs-4"></i>
+                        </a>
+
                     </div>
+
                 </div>
-                <div class="col-2"></div>
             </div>
+
         </div>
     </footer>
 </body>
