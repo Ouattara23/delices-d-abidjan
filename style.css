@@ -12,8 +12,15 @@ nav ul li a{
     background-position: center;
     height: 500px;
 }
-img{
+.menu img{
     width: 100%;
-    height: 50%;
+    height: 60%;
     object-fit: cover;
+}
+.about img{
+    width: 100%;
+    height: 100%;
+}
+i{
+    font-size: 20px;
 }

@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Les délices d'Abidjan</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!--En tête-->
@@ -46,7 +47,7 @@
         </section>
 
         <!--section menu-->
-        <section class="mt-5">
+        <section class="mt-5 menu">
             <div class="container">
                 <h2 class="text-success text-center mb-5">Le menu</h2>
                 <div class="row">
@@ -76,12 +77,12 @@
 
         <!--section à propos de nous-->
         <section>
-            <div class="container">
+            <div class="container about">
                 <div class="row">
                     <div class="col-4">
-                        <img src="images/restaurant.jpg" alt="" class="rounded-5">
+                        <img src="images/restaurant.avif" alt="" class="rounded-5">
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 d-flex flex-column justify-content-center align-items-center">
                         <h3 class="text-success">À propos de nous</h3>
                         <p>Bienvenue à Les Délices d’Abidjan, un restaurant chaleureux où la cuisine ivoirienne rencontre des saveurs modernes venues d’ailleurs.
                             Situé au cœur d’Abidjan, notre établissement vous propose une expérience culinaire unique, alliant authenticité, fraîcheur et créativité.
@@ -91,9 +92,61 @@
                 </div>
             </div>
         </section>
+
+        <!--section contact-->
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-success">Contactez-nous</h3>
+                    <!-- Formulaire -->
+                    <div class="col-6">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Nom</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">E-mail</label>
+                                <input type="email" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="4"></textarea>
+                            </div>
+
+                            <button class="btn btn-success">Envoyer</button>
+
+                        </form>
+                    </div>
+
+                    <!-- Zone vide ou image / info -->
+                    <div class="col-6"></div>
+
+                </div>
+            </div>        
+        </section>
     </main>
 
     <!--Pieds de page-->
-    <footer></footer>
+    <footer class="mt-5 bg-success text-white">
+        <div class="container">
+            <div class="row">
+               <!--<h2>nhv</h2>
+                <hr class="text-white">-->
+                <div class="col-2"></div>
+                <div class="col-8 d-flex flex-column justify-content-center align-items-center">
+                    <p>© 2026 Les Délices d’Abidjan. Tous droits réservés.</p>
+                    <div class="">
+                        <a href="#"><i class="fa-brands fa-facebook text-white "></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok text-white "></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp text-white "></i></a>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
